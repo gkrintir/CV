@@ -1,0 +1,387 @@
+--- COMMENTS may be placed outside the @ENTRYTYPE{ ... } stuctures
+--- CMS guidelines
+---- Every journal article citation should include the DOI, assuming one exists.
+---- All URLs for CMS notes, ANs, etc, should refer to the CDS server, not the CMS server. Use our standard format for them, as show in the old svn documentation.
+----  CMS Notes not available on CDS are regarded as private and may not be cited.
+----  CMS physics papers (i.e., those intended for publication in journals) may reference only POG PASs, not PAG PASs.
+---- For papers by collaborations, list the collaboration in the COLLABOROATION field and put the first author and "and others" in the AUTHOR field.
+----  If only the collaboration is listed as the author, put "{XXX Collaboration}" under AUTHOR.
+----  Note that we automatically replace the AUTHOR field with the collaboration name for ATLAS, CMS, LHCb, and ATLAS at submission time. Please don't remove the
+----  "First Author and others" in the AUTHOR field.
+---- Other items:
+----   PAGES: Please only list the first page, not the range.
+----   ISSUE: Please do not include in most cases.
+----   URL: Do not include this field if a DOI is available.
+---- Number of authors to list:
+----   PRL requests that we include all authors up to fifteen except for large collaborations, and we take this as our internal guide as well. If there
+----   are more than fifteen, just list the first author + "and others", as above.
+----   The individual journal bib style file (theirs, ours, PLB, etc.) will truncate at the appropriate point. We have ours set to _1_ for more than four.
+---- Use only the URL field instead of embedding an href.
+---- A reference only published on the arXiv should be listed as UNPUBLISHED (with a note "Submitted to XXX" for large collaboration papers).
+----   Experimental papers only on the arXiv and not submitted for publication may not be cited.
+---- Some journals (and us) will lowercase the title: use {} to protect words which must be capitalized, e.g., {LHC}, {TeV}, {CERN}, {CMS}.
+----  Do not escape the entire title as it will then clash with the journal style.
+---- Journal names: the journals generally include the series in the journal name, "Physical Review D", vol 5, rather than PR D5
+---- >>> Please use the --preview option with the tdr script to perform a simple-minded reference check before uploading. This requires python.
+
+
+@misc{PRL_edit,
+      author         = "Michael, Schirber",
+      title          = "Top Quark in Nuclear Collisions",
+      year           = "2017",
+      url            = "https://physics.aps.org/articles/v10/s139"
+ }
+
+@misc{Award3,
+      author         = "{Fermilab}",
+      title          = "{LPC Distinguished Researcher}",
+      year           = "2024",
+      url            = "https://lpc.fnal.gov/fellows/2024/Georgios_Krintiras.shtml"
+ }
+@misc{Award4,
+      author         = "{Center for Cosmology, Particle Physics and Phenomenology, Belgium}",
+      title          = "{Heavy metal hits the top}",
+      year           = "2023",
+      url            = "https://agenda.irmp.ucl.ac.be/event/4998/contributions/12810/"
+ }
+
+
+@misc{Award1,
+      author         = "{CMS Collaboration}",
+      title          = "{CMS Award 2021}",
+      year           = "2021",
+      url            = "https://cms.cern/news/cms-award-2021#:~:text=Georgios%20Krintiras%20%2D%20For%20outstanding%20contributions,the%20preparations%20for%20Run%203."
+ }
+ 
+@misc{Award2,
+      author         = "{CMS Collaboration}",
+      title          = "{LPC Distinguished Researcher}",
+      year           = "2023",
+      url            = "https://lpc.fnal.gov/fellows/2024/Georgios_Krintiras.shtml"
+ }
+
+@article{Sirunyan:2017xku,
+      author         = "Sirunyan, Albert M and others",
+      title          = "{Observation of top quark production in proton-nucleus
+                        collisions}",
+      collaboration  = "CMS",
+      journal        = "Phys. Rev. Lett.",
+      year           = "2017",
+      volume         = "119",
+      pages          = "242001",
+      doi            = "10.1103/PhysRevLett.119.242001",
+      eprint         = "1709.07411",
+      archivePrefix  = "arXiv",
+      primaryClass   = "nucl-ex",
+      reportNumber   = "CMS-HIN-17-002, CERN-EP-2017-239",
+      note = "{\textit{Editor's Suggestion}}"
+      SLACcitation   = "%%CITATION = ARXIV:1709.07411;%%"
+}
+
+@article{CMS:2022arf,
+    author = "Tumasyan, Armen and others",
+    collaboration = "CMS",
+    title = "{Observation of $\tau$ lepton pair production in ultraperipheral lead-lead collisions at $\sqrt{s_\mathrm{NN}}$ = 5.02 TeV}",
+    eprint = "2206.05192",
+    archivePrefix = "arXiv",
+    primaryClass = "nucl-ex",
+    reportNumber = "CMS-HIN-21-009, CERN-EP-2022-098",
+    doi = "10.1103/PhysRevLett.131.151803",
+    journal = "Phys. Rev. Lett.",
+    volume = "131",
+    pages = "151803",
+    year = "2023",
+note = "{\textit{Editor's Suggestion}}"
+
+@article{CMS:2023iam,
+    author = "Hayrapetyan, Aram and others",
+    collaboration = "CMS",
+    title = "{Observation of enhanced long-range elliptic anisotropies inside high-multiplicity jets in pp collisions at $\sqrt{s}=13$ TeV}",
+    eprint = "2312.17103",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "CMS-HIN-21-013, CERN-EP-2023-281",
+    doi = "10.1103/PhysRevLett.133.142301",
+    journal = "Phys. Rev. Lett.",
+    volume = "133",
+    pages = "142301",
+    year = "2024",
+    note = "{\textit{Editor's Suggestion}}"
+}
+
+ @misc{CERNCourier,
+      author         = "{CERN Courier}",
+      title          = "{CMS} observes top quarks in proton-nucleus collisions",
+      year           = "2017",
+      url            = "https://cerncourier.com/a/cms-observes-top-quarks-in-proton-nucleus-collisions"
+ }
+ 
+ @misc{CERNRelease,
+      author         = "{CERN}",
+      title          = "{CMS} sees evidence of top quarks in collisions between heavy nuclei",
+      year           = "2020",
+      url            = "https://home.cern/news/news/physics/cms-sees-evidence-top-quarks-collisions-between-heavy-nuclei"
+ }
+ 
+ @misc{MIT,
+      author         = "Peter, Fisher",
+      title          = "Weekly Message to the Physics Community",
+      year           = "2020",
+      url            = "https://fisherp.mit.edu/?p=1596"
+ }
+ 
+ @phdthesis{Krintiras:2018oom,
+    author = "Krintiras, Georgios Konstantinos",
+    title = "{First measurements of the $\rm{t\bar{t}}$ cross section in LHC pp and pPb collisions at 5.02 and 8.16 TeV and determination of the absolute luminosity in the CMS experiment}",
+    reportNumber = "CERN-THESIS-2018-320",
+    school = "Universit\'{e} catholique de Louvain (UCL) (BE)",
+    month = "11",
+    year = "2018",
+    url            = "https://cds.cern.ch/record/2653423"
+}
+
+ @misc{POG,
+      author         = "{CMS Collaboration}",
+      title          = "Physics Organization",
+      year           = "2019",
+      url            = "https://cms-docdb.cern.ch/cgi-bin/PublicDocDB/RetrieveFile?docid=3798&filename=Physics-OrganizationChart_2019-2020.pdf&version=13"
+ }
+  @misc{PAG,
+      author         = "{CMS Collaboration}",
+      title          = "Physics Organization",
+      year           = "2022",
+      url            = "https://cms-docdb.cern.ch/cgi-bin/PublicDocDB/RetrieveFile?docid=3798"
+ }
+
+ 
+  @misc{CERN_Austria,
+      author         = "{CERN}",
+      title          = "Austria Member State",
+      year           = "2020",
+      url            = "https://international-relations.web.cern.ch/stakeholder-relations/states/austria"
+ }
+ 
+   @misc{LIP,
+      author         = "{LIP}",
+      title          = "First observation of top quarks in heavy ion collisions
+",
+      year           = "2020",
+      url            = "https://www.lip.pt/?section=press&page=news-details&id=990&ref=homepage&lang=en"
+ }
+ 
+@misc{physorg,
+      author         = "{Phys.org}",
+      title          = "Evidence of top quarks in collisions between heavy nuclei
+",
+      year           = "2020",
+      url            = "https://phys.org/news/2020-10-evidence-quarks-collisions-heavy-nuclei.html"
+ }
+ 
+@article{Apolinario:2017sob,
+      author         = "Apolin\'{a}rio, Liliana and Milhano, Jose Guilherme and
+                        Salam, Gavin P. and Salgado, Carlos A.",
+      title          = "Probing the time structure of the quark-gluon plasma
+                        with top quarks",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "120",
+      year           = "2018",
+      pages          = "232301",
+      doi            = "10.1103/PhysRevLett.120.232301",
+      eprint         = "1711.03105",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "CERN-TH-2017-237",
+      SLACcitation   = "%%CITATION = ARXIV:1711.03105;%%"
+}
+
+@article{Putschke:2019yrg,
+    author = "Putschke, J.H. and others",
+    title = "{The JETSCAPE framework}",
+    eprint = "1903.07706",
+    archivePrefix = "arXiv",
+    primaryClass = "nucl-th",
+    month = "3",
+    year = "2019"
+}
+
+@article{Sirunyan:2020kov,
+    author = "Sirunyan, Albert M and others",
+    collaboration = "CMS",
+    title = "{Evidence for top quark production in nucleus-nucleus collisions}",
+    eprint = "2006.11110",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "CMS-HIN-19-001, CERN-EP-2020-101",
+    doi = "10.3204/PUBDB-2020-02628",
+    month = "6",
+    year = "2020"
+}
+
+@inproceedings{Schaumann:2018qat,
+    author = "Schaumann, Michaela and others",
+    title = "{First Xenon-Xenon collisions in the LHC}",
+    booktitle = "{9th International Particle Accelerator Conference}",
+    doi = "10.18429/JACoW-IPAC2018-MOPMF039",
+    pages = "MOPMF039",
+    year = "2018"
+}
+
+@article{Schaumann:2019evk,
+    author = "Schaumann, Michaela and others",
+    editor = "Boland, Mark and Tanaka, Hitoshi and Button, David and Dowd, Rohan",
+    title = "{First partially stripped ions in the LHC ($^{208}$Pb$^{81+}$)}",
+    doi = "10.18429/JACoW-IPAC2019-MOPRB055",
+    journal = "J. Phys. Conf. Ser.",
+    volume = "1350",
+    number = "1",
+    pages = "012071",
+    year = "2019"
+}
+
+@inbook{Citron:2018lsq,
+    author = "Citron, Z. and others",
+    editor = "Dainese, Andrea and Mangano, Michelangelo and Meyer, Andreas B. and Nisati, Aleandro and Salam, Gavin and Vesterinen, Mika Anton",
+    title = "{Report from Working Group 5}: {Future physics opportunities for high-density QCD at the LHC with heavy-ion and proton beams}",
+    booktitle = "{Report on the Physics at the HL-LHC,and Perspectives for the HE-LHC}",
+    eprint = "1812.06772",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    reportNumber = "CERN-LPCC-2018-07",
+    doi = "10.23731/CYRM-2019-007.1159",
+    volume = "7",
+    pages = "1159--1410",
+    month = "12",
+    year = "2019"
+}
+
+@article{Bruce:2018yzs,
+    author = "Bruce, Roderik and others",
+    title = "{New physics searches with heavy-ion collisions at the LHC}",
+    eprint = "1812.07688",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    doi = "10.1088/1361-6471/ab7ff7",
+    journal = "Physics",
+    volume = "47",
+    pages = "060501",
+    year = "2020"
+}
+
+@article{Krasny:2020wgx,
+    author = "Krasny, M.W. and Petrenko, A. and P\l aczek, W.",
+    title = "{High-luminosity Large Hadron Collider with laser-cooled isoscalar ion beams}",
+    eprint = "2003.11407",
+    archivePrefix = "arXiv",
+    primaryClass = "physics.acc-ph",
+    doi = "10.1016/j.ppnp.2020.103792",
+    month = "3",
+    year = "2020"
+}
+
+
+@inproceedings{Krintiras:2020nfi,
+    author = "Krintiras, Georgios Konstantinos",
+    collaboration = "CMS",
+    title = "{Evidence for top quark production in nucleus-nucleus collisions}",
+    booktitle = "{10th International Conference on Hard and Electromagnetic Probes of High-Energy Nuclear Collisions}: {Hard Probes 2020~}",
+    eprint = "2009.02421",
+    archivePrefix = "arXiv",
+    primaryClass = "nucl-ex",
+    month = "9",
+    year = "2020"
+}
+
+@inproceedings{Krintiras:2020imy,
+    author = "Krintiras, Georgios Konstantinos",
+    collaboration = "CMS",
+    title = "{Review of results using heavy ion collisions at CMS}",
+    eprint = "2006.05556",
+    archivePrefix = "arXiv",
+    primaryClass = "nucl-ex",
+    month = "6",
+    year = "2020"
+}
+
+@inproceedings{Krintiras:2019tnh,
+    author = "Krintiras, Georgios Konstantinos",
+    collaboration = "CMS",
+    title = "{Evidence for top quark production in nucleus-nucleus collisions}",
+    booktitle = "{28th International Conference on Ultrarelativistic Nucleus-Nucleus Collisions}",
+    eprint = "1912.12104",
+    archivePrefix = "arXiv",
+    primaryClass = "nucl-ex",
+    month = "12",
+    year = "2019"
+}
+
+@inproceedings{Krintiras:2018tlc,
+    author = "Krintiras, Georgios Konstantinos",
+    collaboration = "CMS",
+    title = "{Results on TOP physics from CMS}",
+    booktitle = "{International Workshop on Future Linear Collider}",
+    eprint = "1801.08398",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "CMS-CR-2018-013",
+    month = "1",
+    year = "2018"
+}
+
+@inproceedings{Krintiras:2017ekp,
+    author = "Krintiras, Georgios Konstantinos",
+    collaboration = "CMS",
+    title = "{Observation of top quark production in proton-nucleus collisions}",
+    booktitle = "{10th International Workshop on Top Quark Physics}",
+    eprint = "1712.06102",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "CMS-CR-2017-434",
+    month = "12",
+    year = "2017"
+}
+
+@inproceedings{Krintiras:2017cht,
+    author = "Krintiras, Georgios Konstantinos",
+    collaboration = "CMS",
+    title = "{Study of the top quark production in complementary phase space regions and impact on PDFs in CMS}",
+    booktitle = "{29th Rencontres de Blois on Particle Physics and Cosmology}",
+    eprint = "1712.06103",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "CMS-CR-2017-345",
+    month = "12",
+    year = "2017"
+}
+
+@inproceedings{Krintiras:2017gzi,
+    author = "Krintiras, Georgios Konstantinos",
+    editor = "Klein, Uta",
+    collaboration = "CMS",
+    title = "{Associated production of top quarks with the Higgs boson at $\sqrt{s}=13$ TeV}",
+    eprint = "1712.06104",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "POS(DIS2017)290, CMS-CR-2017-176",
+    doi = "10.22323/1.297.0290",
+    journal = "PoS",
+    volume = "DIS2017",
+    pages = "290",
+    year = "2018"
+}
+
+@inproceedings{Krintiras:2016cfb,
+    author = "Krintiras, Georgios Konstantinos",
+    editor = "Lista, Luca and Margaroli, Fabrizio and Tramontano, Francesco",
+    collaboration = "CMS",
+    title = "{Constraining QCD multijet background in the $\textit{t}$-channel single-top quark production at $\sqrt{s}=$13\ TeV}",
+    eprint = "1712.06106",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "CMS-CR-2015-367, POS(TOP2015)059",
+    doi = "10.22323/1.257.0059",
+    journal = "PoS",
+    volume = "TOP2015",
+    pages = "059",
+    year = "2016"
+}
+
